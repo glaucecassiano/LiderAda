@@ -1,37 +1,48 @@
-import Axios from "axios";
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer"
 
 export const Cadastro = () => {
+  // toast.configure()
+  const fetchUser = () => {
+    return toast.success("Cadastro Realizado com sucesso")
+    // return navigate("/login");
+  }
+  
   const handleSubmit = (event) => {
     // evita que atualize a pagina
     event.preventDefault();
 
-    // ler inputs
     const email = document.getElementById("email").value;
-    console.log(email);
-
     const password = document.getElementById("password").value;
-    console.log(password);
-
     const name = document.getElementById("name").value;
-    console.log(name);
-
+    const username = document.getElementById("username").value;
     const age = document.getElementById("age").value;
-    console.log(age);
-
-    const genero = document.getElementById("genero").value;
-    console.log(genero);
-
     const raca = document.getElementById("raca").value;
-    console.log(raca);
-
+    const genero = document.getElementById("genero").value;
     const uf = document.getElementById("uf").value;
-    console.log(uf);
+    
+    const newUser = {
+      email,
+      password,
+      name,
+      username,
+      age,
+      raca,
+      genero,
+      uf
+    }
 
 
-    Axios.post("http://localhost:5000/login", { email, password });
+      fetch("http://localhost:8000/users/create", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newUser)
+      }).then(fetchUser)
+    
+
   };
 
   const navigate = useNavigate();
@@ -56,6 +67,11 @@ export const Cadastro = () => {
         </div>
         <div>
           <label>
+            Username: <input type="text" name="username" id="username" required />
+          </label>
+        </div>
+        <div>
+          <label>
             Email: <input type="email" name="email" id="email" required />
           </label>
         </div>
@@ -67,7 +83,7 @@ export const Cadastro = () => {
         </div>
         <div>
           <label>
-            Idade: <input type="date" name="age" id="age" />
+            Idade: <input type="text" name="age" id="age" />
           </label>
         </div>
         <div>
