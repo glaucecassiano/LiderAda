@@ -18,7 +18,7 @@
   margin-top: 100px;
 }
 
-h2 {
+#titulo {
   margin-top: 180px;
   text-align: center;
 }
@@ -64,7 +64,44 @@ h3 .porcentagem {
   margin: 50px auto;
 }
 
-.assineaqui {
+#newsletter {
+  margin-bottom: 40px;
+}
+
+#newsletter .newsletter-title {
+  margin-left: 50px;
+}
+
+.newsletter-content {
+  color: white;
+  width: 95%;
+  height: 400px;
+  shape-outside: inset(20px 5px 30px 10px);
+  margin: 50px auto;
+  border-radius: 10px;
+  margin: 0 auto;
   display: flex;
+  border: 1px solid black;
+}
+
+.noticias {
+  background: #666363;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.noticias h2 {
+  font-size: 40px;
+}
+
+.email {
+  display: flex;
+  width: 47.5%;
+  justify-content: center;
   align-items: center;
 }

@@ -1,7 +1,7 @@
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "../components/navbar";
-import { Footer } from "../components/footer"
+import { Footer } from "../components/footer";
 
 export const Cadastro = () => {
   const handleSubmit = (event) => {
@@ -30,8 +30,7 @@ export const Cadastro = () => {
     const uf = document.getElementById("uf").value;
     console.log(uf);
 
-
-    Axios.post("http://localhost:5000/login", { email, password });
+    Axios.post("http://localhost:8000/users/create", { email, password });
   };
 
   const navigate = useNavigate();
@@ -43,15 +42,22 @@ export const Cadastro = () => {
   };
 
   return (
-  
     <div>
-        <div> <Navbar>
-      </Navbar></div>
+      <div>
+        {" "}
+        <Navbar></Navbar>
+      </div>
       <h1>Lidere Conosco</h1>
       <form>
         <div>
           <label>
             Nome: <input type="text" name="name" id="name" required />
+          </label>
+        </div>
+        <div>
+          <label>
+            Username:{" "}
+            <input type="text" name="username" id="username" required />
           </label>
         </div>
         <div>
@@ -99,7 +105,7 @@ export const Cadastro = () => {
         </div>
       </form>
       <div>
-      <Footer></Footer>
+        <Footer></Footer>
       </div>
     </div>
   );

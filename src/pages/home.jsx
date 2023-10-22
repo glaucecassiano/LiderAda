@@ -76,13 +76,23 @@ export const Home = () => {
           </div>
         </div>
 
-        <div id="sete">navegue pelas categorias, listas</div>
+        <div id="sete"></div>
 
-        <div id="oito">
-          <button className="assineaqui">
-            <h1>Assine nossa newsletter</h1>
-          </button>
+        <div id="newsletter">
+          <h2 className="newsletter-title">Assine nossa newsletter</h2>
+          <div className="newsletter-content">
+            <div className="noticias">
+              <h2>
+                Fique por dentro das <br></br> notícias da LíderAda
+              </h2>
+            </div>
+            <div className="email">
+              <input type="text" placeholder="Email" className="email" />
+              <button>Inscrever-se</button>
+            </div>
+          </div>
         </div>
+        <div></div>
       </div>
       <div>
         <Footer></Footer>
