@@ -77,7 +77,6 @@ export const Forum = () => {
             <p>imagem + titulo do tópico</p>
           </div>
         </div>
-        <h1>Junte-se a nós</h1>
         <Footer></Footer>
       </div>
     </div>

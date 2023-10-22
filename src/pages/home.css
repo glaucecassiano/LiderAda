@@ -1,6 +1,7 @@
 .vertical {
   display: flex;
   flex-direction: column;
+  align-item: center;
 }
 
 .horizontal {
@@ -13,9 +14,24 @@
   float: left;
   width: 100%;
   height: 400px;
-  shape-outside: inset(20px 5px 30px 10px);
-  background: #e8e8e8;
   margin-top: 100px;
+  display: flex;
+  background-image: url("../assets/bannerum.png");
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  justify-content: center;
+}
+
+#dois {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#dois p {
+  font-size: 30px;
+  text-align: center;
 }
 
 #titulo {
@@ -23,8 +39,8 @@
   text-align: center;
 }
 
-.dadosum {
-  background: #e8e8e8;
+.bolaum {
+  background: #ab0e38;
   border-radius: 50%;
   display: flex;
   text-align: center;
@@ -35,6 +51,37 @@
   width: 100px;
   font-weight: bold;
   font-size: 45px;
+  color: white;
+}
+
+.boladois {
+  background: #c03c5f;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  padding-inline: 10px 10px;
+  margin: 10px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 45px;
+  color: white;
+}
+
+.bolatres {
+  background: #f28da8;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  padding-inline: 10px 10px;
+  margin: 10px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 45px;
+  color: white;
 }
 
 .porcentagem {
@@ -56,12 +103,54 @@ h3 .porcentagem {
   justify-content: center;
 }
 
-#banner {
-  width: 95%;
+#cinco h1 {
+  margin-left: 10px;
+}
+
+#seis {
+  background-image: url("../assets/Rectangle 6.svg");
+  background-position: right;
   height: 400px;
-  shape-outside: inset(20px 5px 30px 10px);
-  background: #e8e8e8;
-  margin: 50px auto;
+  width: 90%;
+}
+
+#textobannerum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#textobannerdois {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#textobannertres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sete {
+  margin-top: 20px;
+  background-image: url("../assets/Rectangle 6 (1).svg");
+  background-position: inherit;
+  height: 400px;
+  width: 90%;
+}
+
+#oito {
+  margin-top: 20px;
+  background-image: url("../assets/Rectangle 6 (2).svg");
+  background-position: right;
+  height: 400px;
+  width: 90%;
+}
+
+.banners {
+  padding: 20px;
+  color: white;
 }
 
 #newsletter {
@@ -85,7 +174,7 @@ h3 .porcentagem {
 }
 
 .noticias {
-  background: #666363;
+  background-color: #ab0e38;
   border-radius: 10px;
   padding: 50px;
   display: flex;

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { useNavigate } from "react-router-dom";
+import Logo from "../assets/liderada-logo 1.svg";
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const Navbar = () => {
     <nav className="nav">
       <Link to="/">
         {" "}
-        <h1>LíderAda</h1>
+        <img src={Logo} alt="" />
       </Link>
 
       <ul>

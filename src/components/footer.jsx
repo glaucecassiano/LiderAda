@@ -4,12 +4,12 @@ import Instagram from "../assets/Instagram.svg";
 import Email from "../assets/Email.svg";
 import LinkedIn from "../assets/LinkedIn.svg";
 import Linha from "../assets/linha.svg";
+import Logo from "../assets/liderada-logo-colorido 1.svg";
 
 export const Footer = () => {
   return (
     <footer className="footer">
-      <h1>LíderAda</h1>
-
+      <img src={Logo} alt="" />
       <ul>
         <h3>LíderAda</h3>
         <li>
