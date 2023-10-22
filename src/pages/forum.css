@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  align-items: space-between;
+}
+
+.blocoum {
+  display: flex;
+}
+
+.entradaum {
+  display: flex;
+  align-items: column;
+  justify-content: center;
+}
