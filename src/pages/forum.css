@@ -1,14 +1,22 @@
-body {
+.base {
+  display: grid;
+}
+.topicos {
   display: flex;
-  align-items: space-between;
+  flex-direction: row;
 }
 
-.blocoum {
-  display: flex;
+#entrada {
+  width: 50%;
+  padding: 30px;
 }
 
-.entradaum {
-  display: flex;
-  align-items: column;
-  justify-content: center;
+.banner {
+  border-bottom: 100px;
+}
+
+.marcadoretitulo {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-end;
 }

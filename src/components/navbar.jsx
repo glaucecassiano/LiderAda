@@ -13,7 +13,10 @@ export const Navbar = () => {
 
   return (
     <nav className="nav">
-      <h1>LíderAda</h1>
+      <Link to="/">
+        {" "}
+        <h1>LíderAda</h1>
+      </Link>
 
       <ul>
         <li>

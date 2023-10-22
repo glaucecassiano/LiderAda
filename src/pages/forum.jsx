@@ -6,65 +6,80 @@ import MarcadorVazio from "../assets/marcadorvazio.svg";
 
 export const Forum = () => {
   return (
-    <div>
+    <div className="base">
       <div>
-        <div>
-          <Navbar></Navbar>
-        </div>
-        <div id="bloco um">
-          <div id="entradaum">
+        <Navbar></Navbar>
+      </div>
+      <div className="topicos">
+        <div id="entrada">
+          <div className="marcadoretitulo">
             <h2>Remuneração</h2>
             <img id="marcador" src={Marcador} alt="marcador" />
-            <p>Papos sobre #salários, #cargos e #equidade</p>
-            <h2>Remuneração</h2>
-            <img id="marcador" src={MarcadorVazio} alt="marcador" />
-
-            <p>Papos sobre #salários, #cargos e #equidade</p>
-            <h2>Remuneração</h2>
-            <img id="marcador" src={MarcadorVazio} alt="marcador" />
-
-            <p>Papos sobre #salários, #cargos e #equidade</p>
-            <h2>Remuneração</h2>
-            <img id="marcador" src={MarcadorVazio} alt="marcador" />
-
-            <p>Papos sobre #salários, #cargos e #equidade</p>
-            <h2>Remuneração</h2>
-            <img id="marcador" src={MarcadorVazio} alt="marcador" />
-
-            <p>Papos sobre #salários, #cargos e #equidade</p>
           </div>
-          <div id="entradadois"></div>
-          <h1>Maternidade</h1>
-          <img id="marcador" src={MarcadorVazio} alt="marcador" />
-
+          <p>Papos sobre #salários, #cargos e #equidade</p>
+          <div className="marcadoretitulo">
+            {" "}
+            <h2>Remuneração</h2>
+            <img id="marcador" src={Marcador} alt="marcador" />
+          </div>
+          <p>Papos sobre #salários, #cargos e #equidade</p>
+          <div className="marcadoretitulo">
+            {" "}
+            <h2>Remuneração</h2>
+            <img id="marcador" src={Marcador} alt="marcador" />
+          </div>
+          <p>Papos sobre #salários, #cargos e #equidade</p>
+        </div>
+        <div id="entrada">
+          <div className="marcadoretitulo">
+            <h2>Maternidade</h2>
+            <img id="marcador" src={MarcadorVazio} alt="marcador" />
+          </div>
           <p>
             Este tópico aborda questões relacionadas a maternidade e trabalho,
             jornada dupla, cultura organizacional e afins.
           </p>
-          <div></div>
-
-          <div id="blocodois">
-            <h1>#TópicosPopulares</h1>
-            <div id="banner">
-              <div id="textobanner">
-                <h3>Banner</h3>
-                <p>imagem + titulo do tópico</p>
-              </div>
-            </div>
-
-            <div id="seis"></div>
-
-            <div id="banner">
-              <div id="textobanner">
-                <h3>Banner</h3>
-                <p>imagem + titulo do tópico</p>
-              </div>
-            </div>
+          <div className="marcadoretitulo">
+            <h2>Maternidade</h2>
+            <img id="marcador" src={MarcadorVazio} alt="marcador" />
           </div>
-          <div id="footerum"></div>
+          <p>
+            Este tópico aborda questões relacionadas a maternidade e trabalho,
+            jornada dupla, cultura organizacional e afins.
+          </p>
+          <div className="marcadoretitulo">
+            <h2>Maternidade</h2>
+            <img id="marcador" src={MarcadorVazio} alt="marcador" />
+          </div>
+          <p>
+            Este tópico aborda questões relacionadas a maternidade e trabalho,
+            jornada dupla, cultura organizacional e afins.
+          </p>
         </div>
       </div>
-      <Footer></Footer>
+      <div id="blocodois">
+        <h1>#TópicosPopulares</h1>
+        <div id="banner">
+          <div id="textobanner">
+            <h3>Banner</h3>
+            <p>imagem + titulo do tópico</p>
+          </div>
+        </div>
+        <div id="banner">
+          <div id="textobanner">
+            <h3>Banner</h3>
+            <p>imagem + titulo do tópico</p>
+          </div>
+        </div>
+        <div id="banner">
+          <div id="textobanner">
+            <h3>Banner</h3>
+            <p>imagem + titulo do tópico</p>
+          </div>
+        </div>
+        <h1>Junte-se a nós</h1>
+        <Footer></Footer>
+      </div>
     </div>
   );
 };
