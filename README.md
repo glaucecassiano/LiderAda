@@ -1,8 +1,8 @@
-# React + Vite
+# Projeto para a Hackathon das Manas 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Você conhece o LíderAda? A rede social de mulheres para mulheres!
 
-Currently, two official plugins are available:
+Crie conosco o seu networking! 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# Projeto criado em React 
