@@ -1,5 +1,10 @@
 import "./footer.css";
 import {Link} from "react-router-dom";
+import Instagram from "../assets/Instagram.svg"
+import Email from "../assets/Email.svg"
+import LinkedIn from "../assets/LinkedIn.svg"
+
+
 
 
 export const Footer = () => {
@@ -28,9 +33,9 @@ export const Footer = () => {
                 <Link to="/parceires">Parceires</Link>
                 </li>
                 <div>
-                   <img src="" alt="instagram" />
-                   <img src="" alt="email" />
-                   <img src="" alt="linkedin" />
+                   <img src={Instagram} alt="instagram" />
+                   <img src={Email} alt="email" />
+                   <img src={LinkedIn} alt="linkedin" />
                 </div>
             </ul>
             <ul>
